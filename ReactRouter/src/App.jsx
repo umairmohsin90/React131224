@@ -22,10 +22,6 @@ function App() {
 
   return (
     <>
-
-
-
-<BrowserRouter>
     <Header/>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
@@ -35,7 +31,7 @@ function App() {
       <Route path='/ContactTwo/:id' element={<ContactTwo/>}></Route>
      </Routes>
      <Footer/>
-    </BrowserRouter>
+
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
