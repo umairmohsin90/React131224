@@ -10,7 +10,7 @@ const ContactTwo = () => {
     
     
   return (
-    <div>
+    <div className='container px-5 py-24 mx-auto'>
       <h2>This is contactTwo Page.params received are <span className='font-bold text-green-900'>{params.id}</span></h2>
     </div>
   )
