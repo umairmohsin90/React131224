@@ -1,7 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { NavLink} from 'react-router-dom'
+import '../Header/Headerstyle.css'
 const Header = () => {
+
+ const myStyle={
+    color:"Red"
+  }
+ 
+
   return (
     <div>
         <header className="text-gray-600 body-font bg-green-400">
@@ -14,11 +20,13 @@ const Header = () => {
     </a>
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
       
-        <Link to={"/"} className="mr-5 hover:text-gray-900 cursor-pointer">Home</Link>
-        <Link to={"/about"} className="mr-5 hover:text-gray-900 cursor-pointer">About</Link>
-        <Link to={"/Contact"} className="mr-5 hover:text-gray-900 cursor-pointer">Contact</Link>
-        <Link to={"/Tutorials"} className="mr-5 hover:text-gray-900 cursor-pointer">Tutorials</Link>
-        <Link to={"/ContactTwo/:id"} className="mr-5 hover:text-gray-900 cursor-pointer">Params</Link>
+        <NavLink   to={"/"} className="mr-5 hover:text-gray-900 cursor-pointer">Home</NavLink>
+        <NavLink  to={"/about"} className="mr-5 hover:text-gray-900 cursor-pointer">About</NavLink>
+        <NavLink to={"/Contact"} className="mr-5 hover:text-gray-900 cursor-pointer">Contact</NavLink>
+        <NavLink to={"/Tutorials"} className="mr-5 hover:text-gray-900 cursor-pointer">Tutorials</NavLink>
+        <NavLink to={"/ContactTwo/:id"} className="mr-5 hover:text-gray-900 cursor-pointer">Params</NavLink>
+        <NavLink to={"/Products"} className="mr-5 hover:text-gray-900 cursor-pointer">Products</NavLink>
+       
        </nav>
     <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
