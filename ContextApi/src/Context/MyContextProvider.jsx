@@ -12,12 +12,12 @@ import Home from "../Components/Home";
             Study:"React Context Api"
         }
 
-    //    const [myObj, setmyObj] = useState(obj);
+       const [myObj, setmyObj] = useState(obj);
 
        
 
       
-    return(<MyContext.Provider value={obj}>
+    return(<MyContext.Provider value={{myObj,setmyObj}}>
       {children}
 
     </MyContext.Provider>)
